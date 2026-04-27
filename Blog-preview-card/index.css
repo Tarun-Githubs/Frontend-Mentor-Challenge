@@ -1,0 +1,85 @@
+@font-face {
+    font-family: Figtree;
+    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+:root{
+    --primary-color:#f4d04e;
+    --secondary-color:#ffffff;
+    --neutral-color-gray:#6b6b6b;
+    --neutral-color-black:#121212;
+    --font-weight:800;
+    --font-weight-para:500;
+    --font-size:16px;
+}
+
+*{
+    font-family: Figtree;
+    color: var(--neutral-color-black);
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+.rectangle{
+    width: 250px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    background-color: var(--secondary-color);
+    border-radius: 14px;
+    overflow: hidden;
+    padding: 16px;
+    box-shadow: rgba(18,18,18,1)6px 8px 3.2px;
+    border: 1px solid var(--neutral-color-black);
+}
+
+.inner-rectangle img{
+    width: 100%;
+    border-radius: 14px;
+}
+
+.tag{
+    background-color: var(--primary-color);
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: var(--font-size);
+    margin: 8px 0;
+    font-weight: var(--font-weight);
+}
+
+.publish{
+    margin: 4px 0;
+    font-size: var(--font-size);
+}
+
+.course-title{
+    font-size: 22px;
+    font-weight: var(--font-weight);
+    margin: 12px 0;
+}
+
+.description{
+    color: var(--neutral-color-gray);
+}
+
+.profile-pic{
+    float: left;
+    margin-top: 20px;
+}
+
+.profile-pic img{
+    width: 40px;
+    height: 40px;
+}
+
+.name{
+    float: right;
+    height: 40px;
+    margin-left: 8px;
+    line-height: 40px;
+    font-weight: var(--font-weight);
+}
